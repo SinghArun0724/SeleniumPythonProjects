@@ -5,9 +5,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 import time
 
-def test_product_validation():
+def test_product_validation(driver):
 
-    driver = get_driver()
+    # driver = get_driver()
     driver.get("https://ecommerce-playground.lambdatest.io/")
 
     home = HomePage(driver)

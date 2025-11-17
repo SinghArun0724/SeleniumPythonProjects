@@ -17,7 +17,7 @@ class MegaMenu:
 
     def GetAppleSectionText(self):
         GetAppleText = wait_visible(self.driver, MegaMenuAppleLocators.Apple_Section).text
-        return GetAppleText()
+        return GetAppleText
     
     def OpenProduct(self):
         OpenFirstItem = wait_clickable(self.driver, MegaMenuAppleLocators.Item_Name)
